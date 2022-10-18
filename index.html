@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <style>
         body {
             max-width: 720px;
@@ -61,9 +63,12 @@
             width: 50%;
         }
     </style>
+    <script>
+        document.getElementById("maineee").style.visibility = "hidden";
+    </script>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <main>
         <div id="stat"></div>
         <p>Your cards: </p>
@@ -76,7 +81,7 @@
         <input type="number" name="" id="bet">
         <br>
         <button type="reset" onclick="resetGame();" id="reset">Reset</button>
-        <script src="main.js"></script>
+        <script src="main.js" id="maineee"></script>
     </main>
 </body>
 
