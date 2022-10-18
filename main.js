@@ -58,6 +58,9 @@ function takeCard()
         document.getElementById("status").innerHTML = "You Already Got BlackJack";
         money = money + (bet * 6);
         moneyInDOM.innerHTML = "Your money: Rp. " + money;
+        document.querySelector("#takecard").disabled = true;
+        sum = 0;
+        exc = [];
     } else {
         var tmp3 = generateRandom();
         sum += tmp3;
