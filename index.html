@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <style>
         body {
             max-width: 720px;
@@ -62,6 +61,10 @@
         img {
             width: 50%;
         }
+
+        #kael {
+            display: none;
+        }
     </style>
     <script>
         document.getElementById("maineee").style.visibility = "hidden";
@@ -81,7 +84,9 @@
         <input type="number" name="" id="bet">
         <br>
         <button type="reset" onclick="resetGame();" id="reset">Reset</button>
-        <script src="main.js" id="maineee"></script>
+        <div id="kael">
+            <script src="main2.js" id="maineee"></script>
+        </div>
     </main>
 </body>
 
